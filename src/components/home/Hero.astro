@@ -1,0 +1,42 @@
+---
+import HeroBadge from "./HeroBadge.astro";
+import HeroTitle from "./HeroTitle.astro";
+import HeroDescription from "./HeroDescription.astro";
+import HeroButtons from "./HeroButtons.astro";
+import HeroSkills from "./HeroSkills.astro";
+import HeroScroll from "./HeroScroll.astro";
+---
+
+<section class="container-custom flex min-h-screen items-center">
+
+  <div>
+
+    <div class="hero-item">
+      <HeroBadge />
+    </div>
+
+    <div class="hero-item">
+      <HeroTitle />
+    </div>
+
+    <div class="hero-item">
+      <HeroDescription />
+    </div>
+
+    <div class="hero-item mt-10 flex flex-wrap gap-5">
+      <HeroButtons />
+    </div>
+
+    <div class="hero-item">
+      <HeroSkills />
+    </div>
+
+    <div class="hero-item">
+      <HeroScroll />
+    </div>
+
+  </div>
+
+</section>
+
+<script type="module" src="./HeroMotion.ts"></script>
