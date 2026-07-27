@@ -1,4 +1,7 @@
 export const portfolio = {
+  // ===============================
+  // Personal Information
+  // ===============================
   name: "Hemant Pawar",
 
   role: "Cloud & DevOps Engineer",
@@ -6,14 +9,20 @@ export const portfolio = {
   description:
     "I build cloud infrastructure, automate deployments, and document my DevOps journey through hands-on projects.",
 
-  github: "https://github.com/hemantpawar14",
-
-  linkedin: "www.linkedin.com/in/hemantpawar-cloud-devops",
-
-  email: "pawarhemant568@gmail.com",
-
   location: "Nashik, Maharashtra, India",
 
+  // ===============================
+  // Contact
+  // ===============================
+  email: "pawarhemant568@gmail.com",
+
+  github: "https://github.com/hemantpawar14",
+
+  linkedin: "https://www.linkedin.com/in/hemantpawar-cloud-devops",
+
+  // ===============================
+  // Hero Section Skills
+  // ===============================
   skills: [
     "Linux",
     "Git",
@@ -22,6 +31,6 @@ export const portfolio = {
     "AWS",
     "Terraform",
     "Kubernetes",
-    "GitHub Actions"
-  ]
+    "GitHub Actions",
+  ],
 };

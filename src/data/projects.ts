@@ -1,13 +1,11 @@
 import type { Project } from "../types/project";
 
-export const projects: Project[] = [
+export const featuredProjects: Project[] = [
   {
-    id: 1,
-
     title: "Linux for DevOps",
 
     description:
-      "Comprehensive Linux learning repository featuring commands, shell scripting, networking, permissions, process management, LVM, and mini DevOps projects.",
+      "A comprehensive Linux learning repository covering commands, shell scripting, networking, permissions, process management, LVM, and mini DevOps projects.",
 
     image: "/images/projects/linux-devops.png",
 
@@ -15,66 +13,60 @@ export const projects: Project[] = [
 
     live: "",
 
-    featured: true,
-
-    category: "Linux",
-
     technologies: [
       "Linux",
       "Bash",
       "Shell",
       "Git",
-      "GitHub"
-    ]
+      "GitHub",
+    ],
+
+    featured: true,
   },
 
   {
-    id: 2,
-
     title: "Computer Networking",
 
     description:
-      "Professional networking notes for DevOps engineers covering TCP/IP, OSI, DNS, SSH, HTTP, Subnetting and related networking concepts.",
+      "Complete networking notes for DevOps engineers covering TCP/IP, OSI Model, DNS, HTTP, SSH, subnetting, and networking fundamentals.",
 
     image: "/images/projects/networking.png",
 
     github:
       "https://github.com/hemantpawar14/Computer_Networking",
 
-    featured: true,
-
-    category: "Networking",
+    live: "",
 
     technologies: [
       "Networking",
       "TCP/IP",
       "DNS",
       "SSH",
-      "Git"
-    ]
+      "Git",
+    ],
+
+    featured: true,
   },
 
   {
-    id: 3,
-
     title: "Server Health Monitor",
 
     description:
-      "Shell automation project that monitors CPU, RAM and Disk utilization while generating system reports.",
+      "A Bash automation project that monitors CPU, RAM, disk usage, uptime, and generates system health reports.",
 
     image: "/images/projects/server-monitor.png",
 
     github:
       "https://github.com/hemantpawar14/linux-for-devops",
 
-    featured: true,
-
-    category: "Automation",
+    live: "",
 
     technologies: [
       "Linux",
-      "Shell",
-      "Automation"
-    ]
-  }
+      "Bash",
+      "Automation",
+    ],
+
+    featured: true,
+  },
 ];
