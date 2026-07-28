@@ -7,34 +7,98 @@ import HeroSkills from "./HeroSkills.astro";
 import HeroScroll from "./HeroScroll.astro";
 ---
 
-<section class="container-custom flex min-h-screen items-center">
+<section class="relative flex min-h-screen items-center overflow-hidden">
 
-  <div>
+  <!-- ================= Background ================= -->
 
-    <div class="hero-item">
-      <HeroBadge />
+  <div class="absolute inset-0 -z-20 overflow-hidden">
+
+    <!-- Large Glow 1 -->
+    <div
+      class="absolute -left-40 -top-40 h-[28rem] w-[28rem] rounded-full bg-blue-600/20 blur-3xl animate-pulse"
+    ></div>
+
+    <!-- Large Glow 2 -->
+    <div
+      class="absolute left-1/2 top-1/3 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl animate-[pulse_8s_ease-in-out_infinite]"
+    ></div>
+
+    <!-- Large Glow 3 -->
+    <div
+      class="absolute -bottom-40 -right-40 h-[30rem] w-[30rem] rounded-full bg-indigo-600/20 blur-3xl animate-[pulse_10s_ease-in-out_infinite]"
+    ></div>
+
+    <!-- Floating Orb 1 -->
+    <div
+      class="absolute left-[10%] top-[18%] h-6 w-6 rounded-full bg-blue-400/60 blur-sm animate-float"
+    ></div>
+
+    <!-- Floating Orb 2 -->
+    <div
+      class="absolute left-[28%] top-[70%] h-4 w-4 rounded-full bg-cyan-400/60 blur-sm animate-float-delay"
+    ></div>
+
+    <!-- Floating Orb 3 -->
+    <div
+      class="absolute right-[18%] top-[25%] h-8 w-8 rounded-full bg-indigo-400/40 blur-md animate-float-slow"
+    ></div>
+
+    <!-- Floating Orb 4 -->
+    <div
+      class="absolute right-[10%] bottom-[18%] h-5 w-5 rounded-full bg-sky-400/60 blur-sm animate-float"
+    ></div>
+
+    <!-- Floating Orb 5 -->
+    <div
+      class="absolute left-[55%] bottom-[15%] h-3 w-3 rounded-full bg-blue-300/60 blur-sm animate-float-delay"
+    ></div>
+
+    <!-- Floating Orb 6 -->
+    <div
+      class="absolute left-[75%] top-[60%] h-7 w-7 rounded-full bg-cyan-300/40 blur-md animate-float-slow"
+    ></div>
+
+  </div>
+
+  <!-- ================= Grid Overlay ================= -->
+
+  <div
+    class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b20_1px,transparent_1px),linear-gradient(to_bottom,#1e293b20_1px,transparent_1px)] bg-[size:48px_48px]"
+  ></div>
+
+  <!-- ================= Hero Content ================= -->
+
+  <div class="container-custom relative z-10">
+
+    <div class="max-w-4xl">
+
+      <div class="hero-item">
+        <HeroBadge />
+      </div>
+
+      <div class="hero-item mt-6">
+        <HeroTitle />
+      </div>
+
+      <div class="hero-item mt-8">
+        <HeroDescription />
+      </div>
+
+      <div class="hero-item mt-10 flex flex-wrap gap-5">
+        <HeroButtons />
+      </div>
+
+      <div class="hero-item mt-12">
+        <HeroSkills />
+      </div>
+
     </div>
 
-    <div class="hero-item">
-      <HeroTitle />
-    </div>
+  </div>
 
-    <div class="hero-item">
-      <HeroDescription />
-    </div>
-
-    <div class="hero-item mt-10 flex flex-wrap gap-5">
-      <HeroButtons />
-    </div>
-
-    <div class="hero-item">
-      <HeroSkills />
-    </div>
-
-    <div class="hero-item">
-      <HeroScroll />
-    </div>
-
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+    <HeroScroll />
   </div>
 
 </section>

@@ -1,3 +1,5 @@
+import Footer from "../components/layout/Footer.astro";
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,9 +10,11 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
+	<body id="top">
 		<slot />
 	</body>
+
+	<Footer />
 </html>
 
 <style>

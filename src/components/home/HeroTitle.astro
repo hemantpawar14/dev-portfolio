@@ -1,17 +1,35 @@
 ---
-
 const name = "Hemant Pawar";
-
 ---
 
-<h1
-  class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none"
->
-  <span class="block text-white">{name}</span>
+<div class="space-y-6">
 
-  <span
-    class="mt-3 block bg-gradient-to-r from-blue-400 via-cyan-300 to-violet-400 bg-clip-text text-transparent"
+  <!-- Small Intro -->
+  <p
+    class="text-sm font-semibold uppercase tracking-[0.35em] text-blue-400 md:text-base"
   >
-    Cloud & DevOps Engineer
-  </span>
-</h1> 
+    👋 Welcome to my portfolio
+  </p>
+
+  <!-- Name -->
+  <h1
+    class="text-5xl font-extrabold leading-none tracking-tight text-white md:text-7xl lg:text-8xl"
+  >
+    Hi, I'm
+
+    <span
+      class="mt-4 block bg-gradient-to-r from-blue-400 via-cyan-300 to-violet-400 bg-clip-text text-transparent"
+    >
+      {name}
+    </span>
+  </h1>
+
+  <!-- Role -->
+  <h2
+    class="max-w-3xl text-2xl font-semibold text-slate-300 md:text-4xl"
+  >
+    Cloud & 
+    <span class="text-cyan-400">DevOps Engineer</span>
+  </h2>
+
+</div>

@@ -1,0 +1,52 @@
+---
+import { journey } from "../../data/journey";
+import JourneyCard from "../journey/JourneyCard.astro";
+---
+
+<section id="journey" class="container-custom py-28">
+
+  <!-- Heading -->
+  <div class="mb-16 text-center">
+
+    <span class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+      Cloud & DevOps Journey
+    </span>
+
+    <h2 class="mt-4 text-4xl font-bold text-white md:text-5xl">
+      My Learning Roadmap
+    </h2>
+
+    <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-400">
+      Every milestone represents a step in my journey toward becoming a
+      Cloud & DevOps Engineer through consistent hands-on learning and
+      real-world projects.
+    </p>
+
+  </div>
+
+  <!-- Horizontal Timeline -->
+  <div class="overflow-x-auto pb-6">
+
+    <div class="flex items-center gap-8 min-w-max">
+
+      {
+        journey.map((step, index) => (
+          <>
+            <JourneyCard {...step} />
+
+            {
+              index !== journey.length - 1 && (
+                <div
+                  class="hidden h-1 w-20 rounded-full bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 lg:block"
+                ></div>
+              )
+            }
+          </>
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>
