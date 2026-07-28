@@ -1,0 +1,71 @@
+---
+import { certificates } from "../../data/certificates";
+---
+
+<section id="certifications" class="container-custom py-28">
+
+  <div class="mb-16 text-center">
+
+    <span
+      class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400"
+    >
+      CERTIFICATIONS
+    </span>
+
+    <h2 class="mt-4 text-4xl font-bold text-white md:text-5xl">
+      Continuous Learning & Professional Growth
+    </h2>
+
+    <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-400">
+      Every certification represents a milestone in my Cloud & DevOps
+      learning journey and reflects my commitment to continuous
+      improvement.
+    </p>
+
+  </div>
+
+  <div class="grid gap-8 md:grid-cols-2">
+
+    {
+      certificates.map((certificate) => (
+        <div
+          class="group overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/60 transition-all duration-500 hover:-translate-y-2 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-500/20"
+        >
+
+          <img
+            src={certificate.image}
+            alt={certificate.title}
+            class="h-60 w-full object-cover transition duration-500 group-hover:scale-105"
+          />
+
+          <div class="space-y-4 p-6">
+
+            <h3 class="text-2xl font-bold text-white">
+              {certificate.title}
+            </h3>
+
+            <p class="text-slate-400">
+              {certificate.issuer}
+            </p>
+
+            <p class="text-sm text-slate-500">
+              Issued: {certificate.issueDate}
+            </p>
+
+            <a
+              href={certificate.credentialUrl}
+              target="_blank"
+              class="inline-flex rounded-xl bg-blue-600 px-5 py-2 font-medium text-white transition hover:bg-blue-700"
+            >
+              Verify Credential →
+            </a>
+
+          </div>
+
+        </div>
+      ))
+    }
+
+  </div>
+
+</section>
