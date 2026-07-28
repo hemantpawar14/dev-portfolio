@@ -7,7 +7,9 @@ import HeroSkills from "./HeroSkills.astro";
 import HeroScroll from "./HeroScroll.astro";
 ---
 
-<section class="relative flex min-h-screen items-center overflow-hidden">
+<section
+  class="relative flex min-h-[100svh] items-center overflow-hidden pt-24 pb-16 md:min-h-screen md:pt-0 md:pb-0"
+>
 
   <!-- ================= Background ================= -->
 
@@ -68,9 +70,9 @@ import HeroScroll from "./HeroScroll.astro";
 
   <!-- ================= Hero Content ================= -->
 
-  <div class="container-custom relative z-10">
+  <div class="container-custom relative z-10 w-full">
 
-    <div class="max-w-4xl">
+    <div class="mx-auto max-w-4xl text-center md:mx-0 md:text-left">
 
       <div class="hero-item">
         <HeroBadge />
