@@ -1,38 +1,55 @@
 ---
 import { journey } from "../../data/journey";
-import JourneyCard from "../journey/JourneyCard.astro";
+import JourneyCard from "./JourneyCard.astro";
 ---
 
-<section id="journey" class="container-custom py-28">
+<section
+  id="journey"
+  class="container-custom py-20 sm:py-24 lg:py-32"
+>
 
   <!-- Heading -->
-  <div class="mb-16 text-center">
 
-    <span class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-      Cloud & DevOps Journey
+  <div class="mx-auto mb-16 max-w-4xl text-center">
+
+    <span
+      class="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-400 sm:text-sm"
+    >
+      CLOUD & DEVOPS JOURNEY
     </span>
 
-    <h2 class="mt-4 text-4xl font-bold text-white md:text-5xl">
+    <h2
+      class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl"
+    >
       My Learning Roadmap
     </h2>
 
-    <p class="mx-auto mt-6 max-w-3xl text-lg text-slate-400">
-      Every milestone represents a step in my journey toward becoming a
-      Cloud & DevOps Engineer through consistent hands-on learning and
-      real-world projects.
+    <p
+      class="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-400 sm:text-lg sm:leading-8"
+    >
+      Every milestone represents a step toward becoming a Cloud &
+      DevOps Engineer through consistent hands-on learning,
+      practical projects, and continuous improvement.
     </p>
 
   </div>
 
-  <!-- Horizontal Timeline -->
-  <div class="overflow-x-auto pb-6">
+  <!-- Timeline -->
 
-    <div class="flex items-center gap-8 min-w-max">
+  <div
+    class="overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6"
+  >
+
+    <div
+      class="flex min-w-max items-center gap-6 lg:gap-8"
+    >
 
       {
         journey.map((step, index) => (
           <>
-            <JourneyCard {...step} />
+            <div class="snap-center">
+              <JourneyCard {...step} />
+            </div>
 
             {
               index !== journey.length - 1 && (
@@ -50,3 +67,13 @@ import JourneyCard from "../journey/JourneyCard.astro";
   </div>
 
 </section>
+
+<style>
+  div::-webkit-scrollbar {
+    display: none;
+  }
+
+  div {
+    scrollbar-width: none;
+  }
+</style>

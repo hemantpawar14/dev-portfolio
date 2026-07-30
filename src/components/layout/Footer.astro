@@ -25,14 +25,14 @@ const year = new Date().getFullYear();
         </p>
 
         <p class="mt-6 max-w-sm leading-7 text-slate-500">
-          Building cloud infrastructure, automating deployments,
-          and documenting my DevOps journey through practical
-          projects.
+          Passionate about Linux, AWS, Docker, Kubernetes,
+          Terraform, automation, and building reliable cloud
+          infrastructure through hands-on projects.
         </p>
 
       </div>
 
-      <!-- Quick Links -->
+      <!-- Navigation -->
 
       <div>
 
@@ -40,34 +40,34 @@ const year = new Date().getFullYear();
           Quick Links
         </h4>
 
-        <ul class="space-y-3 text-slate-400">
+        <ul class="space-y-3">
 
           <li>
-            <a href="/" class="transition hover:text-cyan-400">
+            <a href="/" class="text-slate-400 transition hover:text-cyan-400">
               Home
             </a>
           </li>
 
           <li>
-            <a href="/projects" class="transition hover:text-cyan-400">
+            <a href="/projects" class="text-slate-400 transition hover:text-cyan-400">
               Projects
             </a>
           </li>
 
           <li>
-            <a href="/certifications" class="transition hover:text-cyan-400">
+            <a href="/certifications" class="text-slate-400 transition hover:text-cyan-400">
               Certifications
             </a>
           </li>
 
           <li>
-            <a href="/about" class="transition hover:text-cyan-400">
+            <a href="/about" class="text-slate-400 transition hover:text-cyan-400">
               About
             </a>
           </li>
 
           <li>
-            <a href="#contact" class="transition hover:text-cyan-400">
+            <a href="#contact" class="text-slate-400 transition hover:text-cyan-400">
               Contact
             </a>
           </li>
@@ -84,38 +84,34 @@ const year = new Date().getFullYear();
           Connect
         </h4>
 
-        <ul class="space-y-3">
+        <div class="space-y-3">
 
-          <li>
-            <a
-              href={portfolio.github}
-              target="_blank"
-              class="text-slate-400 transition hover:text-cyan-400"
-            >
-              GitHub ↗
-            </a>
-          </li>
+          <a
+            href={portfolio.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block text-slate-400 transition hover:text-cyan-400"
+          >
+            GitHub ↗
+          </a>
 
-          <li>
-            <a
-              href={portfolio.linkedin}
-              target="_blank"
-              class="text-slate-400 transition hover:text-cyan-400"
-            >
-              LinkedIn ↗
-            </a>
-          </li>
+          <a
+            href={portfolio.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block text-slate-400 transition hover:text-cyan-400"
+          >
+            LinkedIn ↗
+          </a>
 
-          <li>
-            <a
-              href={`mailto:${portfolio.email}`}
-              class="text-slate-400 transition hover:text-cyan-400"
-            >
-              Email
-            </a>
-          </li>
+          <a
+            href={`mailto:${portfolio.email}`}
+            class="block break-all text-slate-400 transition hover:text-cyan-400"
+          >
+            {portfolio.email}
+          </a>
 
-        </ul>
+        </div>
 
       </div>
 
@@ -127,14 +123,16 @@ const year = new Date().getFullYear();
 
     <!-- Bottom -->
 
-    <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+    <div
+      class="flex flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left"
+    >
 
       <p class="text-sm text-slate-500">
         © {year} Hemant Pawar. All rights reserved.
       </p>
 
       <p class="text-sm text-slate-500">
-        Built with ❤️ using Astro & Tailwind CSS
+        Built with Astro • Tailwind CSS • ❤️
       </p>
 
       <a
