@@ -20,13 +20,11 @@ const {
 ---
 
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-  <!-- Basic -->
-
+  <!-- Basic SEO -->
   <meta charset="UTF-8" />
 
   <meta
@@ -39,6 +37,11 @@ const {
   <meta
     name="description"
     content={description}
+  />
+
+  <meta
+    name="keywords"
+    content="Hemant Pawar, Cloud Engineer, DevOps Engineer, Linux, AWS, Docker, Kubernetes, Terraform, GitHub Actions, DevOps Portfolio, Cloud Portfolio"
   />
 
   <meta
@@ -56,8 +59,7 @@ const {
     content="#020617"
   />
 
-  <!-- Update this after deployment -->
-  <!-- Remove it until you have your final domain -->
+  <!-- Uncomment after deployment -->
   <!--
   <link
     rel="canonical"
@@ -67,9 +69,15 @@ const {
 
   <!-- Open Graph -->
 
-  <meta property="og:type" content="website" />
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-  <meta property="og:title" content={title} />
+  <meta
+    property="og:title"
+    content={title}
+  />
 
   <meta
     property="og:description"
@@ -86,7 +94,15 @@ const {
     content="Hemant Pawar Portfolio"
   />
 
-  <!-- Twitter -->
+  <!-- Uncomment after deployment -->
+  <!--
+  <meta
+    property="og:url"
+    content="https://your-domain.com"
+  />
+  -->
+
+  <!-- Twitter Card -->
 
   <meta
     name="twitter:card"
@@ -108,6 +124,14 @@ const {
     content="/og-image.png"
   />
 
+  <!-- Uncomment if you have an X (Twitter) account -->
+  <!--
+  <meta
+    name="twitter:creator"
+    content="@yourusername"
+  />
+  -->
+
   <!-- Favicon -->
 
   <link
@@ -122,17 +146,25 @@ const {
   class="bg-slate-950 text-white antialiased"
 >
 
+  <!-- Background Effects -->
+
   <AuroraBackground />
 
   <GridPattern />
 
+  <!-- Navigation -->
+
   <Navbar />
+
+  <!-- Main Content -->
 
   <main class="relative z-10 min-h-screen">
 
     <slot />
 
   </main>
+
+  <!-- Footer -->
 
   <Footer />
 
