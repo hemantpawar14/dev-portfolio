@@ -20,6 +20,7 @@ const {
 ---
 
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -60,7 +61,8 @@ const {
     content="#020617"
   />
 
-  <!-- Add this after deployment -->
+  <!-- Add after deployment -->
+
   <!--
   <link
     rel="canonical"
@@ -95,7 +97,8 @@ const {
     content="Hemant Pawar Portfolio"
   />
 
-  <!-- Add after deployment -->
+  <!-- Uncomment after deployment -->
+
   <!--
   <meta
     property="og:url"
@@ -158,6 +161,46 @@ const {
     href="/site.webmanifest"
   />
 
+  <!-- Structured Data -->
+
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+
+      name: "Hemant Pawar",
+
+      jobTitle: "Cloud & DevOps Engineer",
+
+      description:
+        "Cloud & DevOps Engineer specializing in Linux, AWS, Docker, Kubernetes, Terraform, and GitHub Actions.",
+
+      url: "https://your-domain.com",
+
+      image: "https://your-domain.com/og-image.png",
+
+      sameAs: [
+        "https://github.com/hemantpawar14",
+        "https://www.linkedin.com/in/hemantpawar-cloud-devops"
+      ],
+
+      knowsAbout: [
+        "Linux",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "GitHub Actions",
+        "CI/CD",
+        "Cloud Computing",
+        "DevOps",
+        "Networking",
+        "Shell Scripting"
+      ]
+    })}
+  ></script>
+
 </head>
 
 <body
@@ -175,7 +218,7 @@ const {
 
   <Navbar />
 
-  <!-- Main -->
+  <!-- Main Content -->
 
   <main class="relative z-10 min-h-screen">
 
