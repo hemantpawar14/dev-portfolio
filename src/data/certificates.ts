@@ -18,7 +18,7 @@ export const certificates: Certificate[] = [
     image: "/images/certificates/linux-devops-certificate.jpg",
 
     credentialUrl:
-      "https://www.linkedin.com/in/hemantpawar-cloud-devops",
+      "https://github.com/hemantpawar14/linux-for-devops/blob/main/13-Licenses%20%26%20Certification/Linux_Certificate-TWS.png",
 
     featured: true,
   },
