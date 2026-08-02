@@ -15,7 +15,7 @@ export const certificates: Certificate[] = [
 
     issueDate: "July 2026",
 
-    image: "/images/certificates/linux-devops-certificate.jpg",
+    image: "/images/certificates/Linux_Certificate-TWS.png",
 
     credentialUrl:
       "https://github.com/hemantpawar14/linux-for-devops/blob/main/13-Licenses%20%26%20Certification/Linux_Certificate-TWS.png",
